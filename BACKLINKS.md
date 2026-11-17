@@ -1,7 +1,7 @@
 # GitHub 外链清单 → seogeo.cc
 
 > 这个文件列出本仓库中**每一处指向 `seogeo.cc` 的外链**，以及它发布到 GitHub 后对应的公开 URL。
-> 把 `<OWNER>` 换成你的 GitHub 用户名、`<REPO>` 换成仓库名（默认 `ai-agent-b2b-static-site-sop`），即得到完整可访问的外链地址。
+> 把 `suikusales-hub` 换成你的 GitHub 用户名、`ai-agent-b2b-static-site-sop` 换成仓库名（默认 `ai-agent-b2b-static-site-sop`），即得到完整可访问的外链地址。
 
 **目标 URL（所有外链的落点）**：
 
@@ -18,7 +18,7 @@ GitHub 默认渲染仓库根目录 `README.md`，下面这个地址是权重最�
 
 | GitHub 公开 URL | 落点 | 锚文本 |
 |---|---|---|
-| `https://github.com/<OWNER>/<REPO>` | `https://seogeo.cc/ai-agent-b2b-static-site-cloudflare-sop` | SEO小平 · seogeo.cc — 用 AI 智能体做外贸独立站 |
+| `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop` | `https://seogeo.cc/ai-agent-b2b-static-site-cloudflare-sop` | SEO小平 · seogeo.cc — 用 AI 智能体做外贸独立站 |
 
 README 内还有 5 处补充链接（作者站点、延伸阅读、版权、原文链接等），都随主页一起被渲染。
 
@@ -30,28 +30,28 @@ GitHub 会为每个文件生成可公开访问的 `blob` 页面。下面每个 U
 
 | # | GitHub 公开 URL | 落点 |
 |---|---|---|
-| 1 | `https://github.com/<OWNER>/<REPO>/blob/main/README.md` | seogeo.cc（6 处） |
-| 2 | `https://github.com/<OWNER>/<REPO>/blob/main/BACKLINKS.md` | seogeo.cc |
-| 3 | `https://github.com/<OWNER>/<REPO>/blob/main/CHECKLIST.md` | seogeo.cc（2 处） |
-| 4 | `https://github.com/<OWNER>/<REPO>/blob/main/docs/SOP.md` | seogeo.cc（2 处） |
-| 5 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/README.md` | seogeo.cc（2 处） |
-| 6 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/02-check-folder.md` | seogeo.cc |
-| 7 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/03-install-node.md` | seogeo.cc |
-| 8 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/04-basic-info.md` | seogeo.cc |
-| 9 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/05-write-agents-md.md` | seogeo.cc |
-| 10 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/05-build-components.md` | seogeo.cc |
-| 11 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/05-verify-rules.md` | seogeo.cc |
-| 12 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/06-corpus-form.md` | seogeo.cc |
-| 13 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/06-write-five-pages.md` | seogeo.cc |
-| 14 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/07-preview.md` | seogeo.cc |
-| 15 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/08-iterate-design.md` | seogeo.cc |
-| 16 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/09-build-templates.md` | seogeo.cc |
-| 17 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/09-verify-templates.md` | seogeo.cc |
-| 18 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/10-build.md` | seogeo.cc |
-| 19 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/13-screaming-frog.md` | seogeo.cc |
-| 20 | `https://github.com/<OWNER>/<REPO>/blob/main/prompts/appendix-error.md` | seogeo.cc |
-| 21 | `https://github.com/<OWNER>/<REPO>/blob/main/template/README.md` | seogeo.cc（2 处） |
-| 22 | `https://github.com/<OWNER>/<REPO>/blob/main/template/AGENTS.md` | seogeo.cc |
+| 1 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/README.md` | seogeo.cc（6 处） |
+| 2 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/BACKLINKS.md` | seogeo.cc |
+| 3 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/CHECKLIST.md` | seogeo.cc（2 处） |
+| 4 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/docs/SOP.md` | seogeo.cc（2 处） |
+| 5 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/README.md` | seogeo.cc（2 处） |
+| 6 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/02-check-folder.md` | seogeo.cc |
+| 7 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/03-install-node.md` | seogeo.cc |
+| 8 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/04-basic-info.md` | seogeo.cc |
+| 9 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/05-write-agents-md.md` | seogeo.cc |
+| 10 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/05-build-components.md` | seogeo.cc |
+| 11 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/05-verify-rules.md` | seogeo.cc |
+| 12 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/06-corpus-form.md` | seogeo.cc |
+| 13 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/06-write-five-pages.md` | seogeo.cc |
+| 14 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/07-preview.md` | seogeo.cc |
+| 15 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/08-iterate-design.md` | seogeo.cc |
+| 16 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/09-build-templates.md` | seogeo.cc |
+| 17 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/09-verify-templates.md` | seogeo.cc |
+| 18 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/10-build.md` | seogeo.cc |
+| 19 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/13-screaming-frog.md` | seogeo.cc |
+| 20 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/prompts/appendix-error.md` | seogeo.cc |
+| 21 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/template/README.md` | seogeo.cc（2 处） |
+| 22 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/blob/main/template/AGENTS.md` | seogeo.cc |
 
 ---
 
@@ -59,10 +59,10 @@ GitHub 会为每个文件生成可公开访问的 `blob` 页面。下面每个 U
 
 | 入口 | URL | 说明 |
 |---|---|---|
-| 提交历史 | `https://github.com/<OWNER>/<REPO>/commits/main` | 提交信息里含原文出处 |
-| 目录浏览 | `https://github.com/<OWNER>/<REPO}/tree/main/prompts` | 目录内文件摘要可能含链接 |
-| 原始文件 | `https://raw.githubusercontent.com/<OWNER>/<REPO>/main/README.md` | 纯文本，含全部 markdown 链接 |
-| GitHub Pages（可选） | `https://<OWNER>.github.io/<REPO>/` | 若开启 Pages，README 可作为站点首页 |
+| 提交历史 | `https://github.com/suikusales-hub/ai-agent-b2b-static-site-sop/commits/main` | 提交信息里含原文出处 |
+| 目录浏览 | `https://github.com/suikusales-hub/<REPO}/tree/main/prompts` | 目录内文件摘要可能含链接 |
+| 原始文件 | `https://raw.githubusercontent.com/suikusales-hub/ai-agent-b2b-static-site-sop/main/README.md` | 纯文本，含全部 markdown 链接 |
+| GitHub Pages（可选） | `https://suikusales-hub.github.io/ai-agent-b2b-static-site-sop/` | 若开启 Pages，README 可作为站点首页 |
 
 ---
 
