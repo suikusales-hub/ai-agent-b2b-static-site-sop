@@ -1,0 +1,36 @@
+---
+// 示例首页：演示所有页面如何套 BaseLayout、如何引入面包屑。
+// 真实内容按 SOP 第六步让智能体生成。
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { site, navLinks } from '../config/site.config';
+
+const title = `${site.brand} — B2B Supplier for Global Buyers`; // 唯一，≤60 字符
+const description = `${site.brand} supplies B2B buyers worldwide. Explore our product categories, Request a quote, and get a response within 12 hours.`; // 唯一，120-158 字符
+const pathname = '/';
+---
+
+<BaseLayout title={title} description={description} pathname={pathname}>
+  <Breadcrumb items={[{ name: 'Home', href: '/' }]} />
+  <article>
+    <h1>{site.brand} — 一句话说清「我们是谁 + 为谁做什么」</h1>
+    <p>把 Hero、核心产品分类、为什么选我们、认证与质检、合作流程、FAQ、询盘 CTA 按 SOP 第六步补进来。</p>
+
+    <h2>核心产品分类</h2>
+    <p>3-6 个卡片，链到后面的分类页（先做成占位链接）。</p>
+
+    <h2>为什么选我们</h2>
+    <p>4 条真实事实，带数字最好。不要编造语料里没有的数据。</p>
+
+    <h2>合作流程</h2>
+    <ol>
+      <li>询盘</li>
+      <li>报价</li>
+      <li>打样</li>
+      <li>量产</li>
+    </ol>
+
+    <h2>联系我们</h2>
+    <p>邮箱：{site.email} · WhatsApp：{site.whatsapp} · 响应时效：{site.responseTime}</p>
+  </article>
+</BaseLayout>

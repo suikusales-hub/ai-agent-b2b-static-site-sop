@@ -1,0 +1,39 @@
+---
+// 顶部导航 —— 全站唯一一份，链接从站点配置读取，不硬编码。
+// 移动端用纯 CSS，不引入 JS。规则见 AGENTS.md「公用模块规则」。
+import { site, navLinks } from '../config/site.config';
+---
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">{site.brand}</a>
+
+    <!-- 纯 CSS 移动端菜单：checkbox hack，无 JS -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" />
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true">☰</label>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        {navLinks.map((link) => (
+          <li><a href={link.href}>{link.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header { border-bottom: 1px solid #e5e7eb; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1rem; display: flex;
+    align-items: center; justify-content: space-between; min-height: 60px; }
+  .brand { font-weight: 700; font-size: 1.25rem; text-decoration: none; color: #111827; }
+  .site-nav ul { list-style: none; display: flex; gap: 1.25rem; margin: 0; padding: 0; }
+  .site-nav a { text-decoration: none; color: #374151; }
+  .nav-toggle, .nav-burger { display: none; }
+  @media (max-width: 640px) {
+    .nav-burger { display: block; font-size: 1.5rem; cursor: pointer; }
+    .site-nav { display: none; width: 100%; }
+    .nav-toggle:checked ~ .site-nav { display: block; }
+    .site-nav ul { flex-direction: column; gap: .75rem; padding: 1rem 0; }
+  }
+</style>

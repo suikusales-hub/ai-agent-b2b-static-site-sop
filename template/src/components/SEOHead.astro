@@ -1,0 +1,37 @@
+---
+// 接收 title / description / ogImage，自动输出全部 SEO 标签。
+// 规则见 AGENTS.md：title 唯一 ≤60、description 唯一 120-158、canonical 绝对 URL。
+import { canonical } from '../lib/seo';
+import { site } from '../config/site.config';
+
+interface Props {
+  title: string;          // 唯一，≤60 字符，含主关键词
+  description: string;    // 唯一，120-158 字符
+  pathname: string;       // 当前页面路径，用于生成 canonical
+  ogImage?: string;
+  noindex?: boolean;
+}
+
+const { title, description, pathname, ogImage, noindex = false } = Astro.props;
+const canonicalUrl = canonical(pathname);
+const ogImageUrl = ogImage ? canonical(ogImage) : undefined;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content={site.brand} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+{ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+{ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}

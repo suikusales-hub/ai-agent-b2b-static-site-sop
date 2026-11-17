@@ -1,0 +1,23 @@
+---
+// 页脚 —— 全站唯一一份，链接从站点配置读取，不硬编码。
+// 隐私政策 / 服务条款只放页脚，不放主导航。规则见 AGENTS.md。
+import { site, footerLinks } from '../config/site.config';
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; {new Date().getFullYear()} {site.legalName}. All rights reserved.</p>
+    <ul>
+      {footerLinks.map((link) => (
+        <li><a href={link.href}>{link.label}</a></li>
+      ))}
+    </ul>
+  </div>
+</footer>
+
+<style>
+  .site-footer { border-top: 1px solid #e5e7eb; margin-top: 3rem; padding: 1.5rem 0; color: #6b7280; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1rem; }
+  .site-footer ul { list-style: none; display: flex; gap: 1.25rem; padding: 0; }
+  .site-footer a { color: #6b7280; text-decoration: none; }
+</style>

@@ -1,0 +1,50 @@
+---
+// HTML 骨架 —— 以后所有页面都用它，不允许绕过。规则见 AGENTS.md。
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import SEOHead from '../components/SEOHead.astro';
+import { organizationJsonLd, websiteJsonLd } from '../lib/seo';
+
+interface Props {
+  title: string;          // 唯一，≤60 字符
+  description: string;    // 唯一，120-158 字符
+  pathname: string;
+  ogImage?: string;
+  noindex?: boolean;
+}
+
+const { title, description, pathname, ogImage, noindex } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <SEOHead
+      title={title}
+      description={description}
+      pathname={pathname}
+      ogImage={ogImage}
+      noindex={noindex}
+    />
+    <!-- Organization 全站只用一次 + WebSite -->
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(organizationJsonLd())} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(websiteJsonLd())} />
+  </head>
+  <body>
+    <Nav />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  body { font-family: system-ui, -apple-system, sans-serif; color: #111827;
+    margin: 0; line-height: 1.6; }
+  main { max-width: 1080px; margin: 0 auto; padding: 1rem; min-height: 60vh; }
+  h1, h2, h3 { line-height: 1.25; }
+  img { max-width: 100%; height: auto; }
+</style>

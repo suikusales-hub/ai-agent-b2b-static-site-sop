@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# sitemap 完整地址 —— 必须与 astro.config.mjs 的 site 一致
+Sitemap: https://mybrand.example.com/sitemap-index.xml

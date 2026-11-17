@@ -1,0 +1,33 @@
+---
+// 可见面包屑 + BreadcrumbList 结构化数据。规则见 AGENTS.md。
+import { breadcrumbJsonLd } from '../lib/seo';
+
+interface Props {
+  items: Array<{ name: string; href: string }>;
+}
+const { items } = Astro.props;
+const jsonLd = breadcrumbJsonLd(items);
+---
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    {items.map((item, i) => (
+      <li>
+        {i < items.length - 1
+          ? <a href={item.href}>{item.name}</a>
+          : <span aria-current="page">{item.name}</span>}
+        {i < items.length - 1 && <span class="sep" aria-hidden="true">/</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+
+<style>
+  .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem;
+    margin: 1rem 0; padding: 0; font-size: .9rem; color: #6b7280; }
+  .breadcrumb li { display: inline-flex; align-items: center; gap: .4rem; }
+  .breadcrumb a { color: #6b7280; text-decoration: none; }
+  .sep { color: #d1d5db; }
+</style>
